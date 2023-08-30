@@ -1,7 +1,7 @@
 {
   "name": "@rafacdb/ds-panda",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "homepage": "https://github.com/Bastiani/ds-panda",
   "main": "dist/index.es.js",
