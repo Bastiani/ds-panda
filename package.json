@@ -1,13 +1,21 @@
 {
   "name": "@rafacdb/ds-panda",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.4",
   "type": "module",
+  "homepage": "https://github.com/Bastiani/ds-panda",
+  "main": "dist/index.es.js",
+  "unpkg": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "prepare": "panda codegen"
+    "prepare": "panda codegen",
+    "publish:dist": "yarn publish --access public"
   },
   "dependencies": {
     "preact": "^10.16.0"
