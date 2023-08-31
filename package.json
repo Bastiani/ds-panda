@@ -1,11 +1,18 @@
 {
   "name": "@rafacdb/ds-panda",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "homepage": "https://github.com/Bastiani/ds-panda",
-  "main": "dist/index.es.js",
-  "unpkg": "dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "typings": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -23,6 +30,8 @@
   "devDependencies": {
     "@pandacss/dev": "^0.13.1",
     "@preact/preset-vite": "^2.5.0",
+    "@rollup/plugin-typescript": "^11.1.3",
+    "rollup-plugin-typescript-paths": "^1.4.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
