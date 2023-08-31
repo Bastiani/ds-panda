@@ -1,5 +1,6 @@
 import { css } from "styled-system/css";
 import { Button } from "@/components";
+import { Button as ButtonDS } from "./index";
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
       </span>
       <br />
       <Button>Button Panda 🐼</Button>
+      <ButtonDS>Button</ButtonDS>
     </>
   );
 }
